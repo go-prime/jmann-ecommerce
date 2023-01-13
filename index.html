@@ -9,25 +9,25 @@
     
     
     
-    <link rel="stylesheet" href="public/vendors/bootstrap5/css/yeti.bootstrap.min.css">
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="/public/vendors/bootstrap5/css/yeti.bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
     
     
     
 </head>
 <body>
     
-    <nav id="main-nav-lg" class="bg-primary py-2">
-    <div class="container">
+    <nav id="main-nav-lg" class="bg-primary">
+    <div class="container py-2">
         <div class="row upper pt-3 pb-1">
-            <div class="col-6">
+            <div class="col-lg-10">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-3 col-md-4">
                         <a href="/">
-                            <img class="w-100 img-thumbnail" src="public/img/jmann-logo.png" alt="">
+                            <img class="w-100 img-thumbnail" src="/public/img/jmann-logo.png" alt="">
                         </a>
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-4 col-md-8">
                         <table class="w-100">
                             <thead>
                                 <tr>
@@ -48,11 +48,7 @@
                             </small>
                         </caption>
                     </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-9">
+                    <div class="col-lg-5 col-md-12">
                         <div class="row py-1">
                             <div class="col-3">
                                 <a href="" class="btn btn-light w-100">Account</a>
@@ -91,12 +87,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <a href="" class="btn btn-outline-light w-100 mt-5">
-                            <object data="public/img/icons/cart.png" class="glyphicon-24"></object>&nbsp;&nbsp;My Cart
-                        </a>
-                    </div>
                 </div>
+            </div>
+            <div class="col-lg-2 pt-lg-5">
+                <a href="" class="btn btn-outline-light w-100">
+                    <object data="/public/img/icons/cart.png" class="glyphicon-24"></object>&nbsp;&nbsp;My Cart
+                </a>
             </div>
         </div>
         <div class="row lower pt-3">
@@ -106,34 +102,39 @@
                         <a href="/" class="active ">HOME</a>
                     </li>
                     <li>
-                        <a href="/store" class="">CATEGORIES</a>
+                        <a href="/store.html" class="">STORE</a>
                     </li>
                     <li>
-                        <a href="/store" class="">BRANDS</a>
+                        <a href="/store.html" class="d-none ">CATEGORIES</a>
                     </li>
                     <li>
-                        <a href="/about" class="">ABOUT US</a>
+                        <a href="/store.html" class="d-none ">BRANDS</a>
                     </li>
                     <li>
-                        <a href="/contact" class="">CONTACT US</a>
+                        <a href="/about.html" class="">ABOUT</a>
                     </li>
                     <li>
-                        <a href="/email" class="">EMAIL US</a>
+                        <a href="/contact.html" class="">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="/email.html" class="d-none ">EMAIL</a>
                     </li>
                 </ul>
                 <a href="" class="float-end">
-                   <object data="public/img/icons/facebook.svg" class="glyphicon-24"></object>&nbsp;Find us on Facebook</a>
+                   <object data="/public/img/icons/facebook.svg" class="glyphicon-24"></object>&nbsp;Find us on Facebook</a>
             </div>
         </div>
     </div>
 </nav>
 
   
-    
-    <section style="height: 100vh;"></section>
-    
-    <footer id="main-footer-lg" class="bg-primary py-2 text-white white-links undecorated-links">
-    <div class="container">
+    <main>
+        
+        <section style="height: 100vh;"></section>
+        
+    </main>
+    <footer id="main-footer-lg" class="bg-primary">
+    <div class="container py-2 text-white white-links undecorated-links">
         <div class="row py-5">
             <div class="col-md-6">
                 <h1><span class="text-decoration-underline underline-offset-8">SIGN UP</span> FOR NEWSLETTER</h1>
@@ -220,7 +221,7 @@
   
     
     
-    <script src="public/js/main.js"></script>
+    <script src="/public/js/main.js"></script>
     
     
     

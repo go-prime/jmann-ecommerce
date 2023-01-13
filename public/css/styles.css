@@ -1,5 +1,6 @@
 body {
     background: #fff;
+    min-height: 100% !important;
 }
 
 /* UTILITIES */
@@ -12,10 +13,17 @@ body {
 .underline-offset-8 {
     text-underline-offset: 8px;
 }
+.underline-black {
+    text-decoration: underline;
+    text-decoration-color: #008cba;
+}
 .glyphicon-24 {
     vertical-align: middle;
     width: 24px;
     height: 24px;
+}
+.vh-100 {
+    min-height: 100vh;
 }
 /* END OF UTILITIES */
 
@@ -26,7 +34,8 @@ nav#main-nav-lg .upper {
 }
 
 nav#main-nav-lg img {
-    border-radius: 12px;
+    /* border-radius: 12px; */
+    max-height: 120px;
 }
 
 nav#main-nav-lg li {
