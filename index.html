@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>JMann Website</title>
     
     
     
@@ -13,7 +12,20 @@
     <link rel="stylesheet" href="public/css/styles.css">
     
     
-    
+<style>
+    #brands-row, #categories-row {
+        display: inline-flex;
+        overflow-x: scroll;
+        max-width: 100%;
+        padding: 24px;
+    }
+    #brands-row img, #categories-row img {
+        margin: auto 16px;
+        width: 300px;
+        height: 300px;
+    }
+</style>
+
 </head>
 <body>
     
@@ -23,7 +35,7 @@
             <div class="col-lg-10">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
-                        <a href="/">
+                        <a href="index.html">
                             <img class="w-100 img-thumbnail" src="public/img/jmann-logo.png" alt="">
                         </a>
                     </div>
@@ -117,7 +129,7 @@
                         <a href="contact.html" class="">CONTACT</a>
                     </li>
                     <li>
-                        <a href="email.html" class="d-none ">EMAIL</a>
+                        <a href="/email" class="d-none ">EMAIL</a>
                     </li>
                 </ul>
                 <a href="" class="float-end">
@@ -130,8 +142,167 @@
   
     <main>
         
-        <section style="height: 100vh;"></section>
-        
+    <section class="container undecorated-links">
+        <div class="row mb-3 mt-3">
+            <div class="col-12">
+                <img id="header-img" src="public/img/jmann-header.jpg" alt="" class="w-100 h-500-px">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <h2 class="mb-3"><b class="underline-black underline-offset-8 letter-spacing-8px">Abo</b>ut Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum nihil dicta dolor aliquid quia veritatis, labore provident consequatur? Voluptatibus nemo voluptatem laboriosam est modi quae.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus voluptates non, suscipit maxime minus?
+                </p>
+                <p class="text-center">
+                    <a href="about.html" class="btn btn-link w-100">More</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="public/img/jmann1.jpg" alt="" class="w-100  h-300-px">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                <h2 class="mb-3 text-center"><b class="underline-black underline-offset-8 letter-spacing-8px">Fea</b>tured Categories</h2>
+                <p class="text-end">
+                    <button class="btn btn-primary me-2 scroll-row-left"><</button>
+                    <button class="btn btn-primary ms-2 scroll-row-right">></button>
+                </p>
+                <div class="bg-primary scroll-row white-links" id="categories-row">
+                    
+                    <a href="store.html?category=couplings" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-couplings.jpg" alt="">
+                            <h5 class="text-center mt-1">couplings</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?category=flenges" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-flenges.jpg" alt="">
+                            <h5 class="text-center mt-1">flenges</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?category=horses" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-horses.jpg" alt="">
+                            <h5 class="text-center mt-1">horses</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?category=orses" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-orses.jpg" alt="">
+                            <h5 class="text-center mt-1">orses</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?category=pipes" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-pipes.jpg" alt="">
+                            <h5 class="text-center mt-1">pipes</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?category=shafts" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-shafts.jpg" alt="">
+                            <h5 class="text-center mt-1">shafts</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?category=sprockets" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-sprockets.jpg" alt="">
+                            <h5 class="text-center mt-1">sprockets</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?category=tubes" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-tubes.jpg" alt="">
+                            <h5 class="text-center mt-1">tubes</h5>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                <h2 class="mb-3 text-center"><b class="underline-black underline-offset-8 letter-spacing-8px">Fea</b>tured Brands</h2>
+                <p class="text-start">
+                    <button class="btn btn-primary me-2 scroll-row-left"><</button>
+                    <button class="btn btn-primary ms-2 scroll-row-right">></button>
+                </p>
+                <div class="bg-primary scroll-row white-links" id="brands-row">
+                    
+                    <a href="store.html?brand=couplings" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-couplings.jpg" alt="">
+                            <h5 class="text-center mt-1">couplings</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?brand=flenges" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-flenges.jpg" alt="">
+                            <h5 class="text-center mt-1">flenges</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?brand=horses" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-horses.jpg" alt="">
+                            <h5 class="text-center mt-1">horses</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?brand=orses" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-orses.jpg" alt="">
+                            <h5 class="text-center mt-1">orses</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?brand=pipes" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-pipes.jpg" alt="">
+                            <h5 class="text-center mt-1">pipes</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?brand=shafts" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-shafts.jpg" alt="">
+                            <h5 class="text-center mt-1">shafts</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?brand=sprockets" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-sprockets.jpg" alt="">
+                            <h5 class="text-center mt-1">sprockets</h5>
+                        </div>
+                    </a>
+                    
+                    <a href="store.html?brand=tubes" class="scroll-row-item">
+                        <div>
+                            <img src="public/img/jmann-tubes.jpg" alt="">
+                            <h5 class="text-center mt-1">tubes</h5>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
     <footer id="main-footer-lg" class="bg-primary">
     <div class="container py-2 text-white white-links undecorated-links">
