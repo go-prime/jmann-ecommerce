@@ -13,16 +13,22 @@
     
     
 <style>
-    #brands-row, #categories-row {
+    #products-row, #categories-row {
         display: inline-flex;
         overflow-x: scroll;
         max-width: 100%;
         padding: 24px;
     }
-    #brands-row img, #categories-row img {
+    #products-row .scroll-row-item, #categories-row .scroll-row-item {
         margin: auto 16px;
-        width: 300px;
+    }
+    #products-row img {
         height: 300px;
+        width: 300px;
+    }
+    #categories-row img {
+        height: 250px;
+        width: 200px;
     }
 </style>
 
@@ -172,61 +178,61 @@
                     <button class="btn btn-primary me-2 scroll-row-left"><</button>
                     <button class="btn btn-primary ms-2 scroll-row-right">></button>
                 </p>
-                <div class="bg-primary scroll-row white-links" id="categories-row">
+                <div class="bg-primary scroll-row scroll white-links" id="categories-row">
                     
                     <a href="store.html?category=couplings" class="scroll-row-item">
                         <div>
-                            <img src="public/img/jmann-couplings.jpg" alt="">
-                            <h5 class="text-center mt-1">couplings</h5>
+                            <img src="public/img/jmann-couplings.jpg" alt="" class="">
+                            <h5 class="text-center mt-1 text-uppercase">couplings</h5>
                         </div>
                     </a>
                     
                     <a href="store.html?category=flenges" class="scroll-row-item">
                         <div>
-                            <img src="public/img/jmann-flenges.jpg" alt="">
-                            <h5 class="text-center mt-1">flenges</h5>
+                            <img src="public/img/jmann-flenges.jpg" alt="" class="">
+                            <h5 class="text-center mt-1 text-uppercase">flenges</h5>
                         </div>
                     </a>
                     
                     <a href="store.html?category=horses" class="scroll-row-item">
                         <div>
-                            <img src="public/img/jmann-horses.jpg" alt="">
-                            <h5 class="text-center mt-1">horses</h5>
+                            <img src="public/img/jmann-horses.jpg" alt="" class="">
+                            <h5 class="text-center mt-1 text-uppercase">horses</h5>
                         </div>
                     </a>
                     
                     <a href="store.html?category=orses" class="scroll-row-item">
                         <div>
-                            <img src="public/img/jmann-orses.jpg" alt="">
-                            <h5 class="text-center mt-1">orses</h5>
+                            <img src="public/img/jmann-orses.jpg" alt="" class="">
+                            <h5 class="text-center mt-1 text-uppercase">orses</h5>
                         </div>
                     </a>
                     
                     <a href="store.html?category=pipes" class="scroll-row-item">
                         <div>
-                            <img src="public/img/jmann-pipes.jpg" alt="">
-                            <h5 class="text-center mt-1">pipes</h5>
+                            <img src="public/img/jmann-pipes.jpg" alt="" class="">
+                            <h5 class="text-center mt-1 text-uppercase">pipes</h5>
                         </div>
                     </a>
                     
                     <a href="store.html?category=shafts" class="scroll-row-item">
                         <div>
-                            <img src="public/img/jmann-shafts.jpg" alt="">
-                            <h5 class="text-center mt-1">shafts</h5>
+                            <img src="public/img/jmann-shafts.jpg" alt="" class="">
+                            <h5 class="text-center mt-1 text-uppercase">shafts</h5>
                         </div>
                     </a>
                     
                     <a href="store.html?category=sprockets" class="scroll-row-item">
                         <div>
-                            <img src="public/img/jmann-sprockets.jpg" alt="">
-                            <h5 class="text-center mt-1">sprockets</h5>
+                            <img src="public/img/jmann-sprockets.jpg" alt="" class="">
+                            <h5 class="text-center mt-1 text-uppercase">sprockets</h5>
                         </div>
                     </a>
                     
                     <a href="store.html?category=tubes" class="scroll-row-item">
                         <div>
-                            <img src="public/img/jmann-tubes.jpg" alt="">
-                            <h5 class="text-center mt-1">tubes</h5>
+                            <img src="public/img/jmann-tubes.jpg" alt="" class="">
+                            <h5 class="text-center mt-1 text-uppercase">tubes</h5>
                         </div>
                     </a>
                     
@@ -235,68 +241,116 @@
         </div>
         <div class="row mb-3">
             <div class="col-12">
-                <h2 class="mb-3 text-center"><b class="underline-black underline-offset-8 letter-spacing-8px">Fea</b>tured Brands</h2>
+                <h2 class="mb-3 text-center"><b class="underline-black underline-offset-8 letter-spacing-8px">Fea</b>tured Products</h2>
                 <p class="text-start">
                     <button class="btn btn-primary me-2 scroll-row-left"><</button>
                     <button class="btn btn-primary ms-2 scroll-row-right">></button>
                 </p>
-                <div class="bg-primary scroll-row white-links" id="brands-row">
+                <div class="bg-primary scroll-row scroll white-links" id="products-row">
                     
-                    <a href="store.html?brand=couplings" class="scroll-row-item">
-                        <div>
-                            <img src="public/img/jmann-couplings.jpg" alt="">
-                            <h5 class="text-center mt-1">couplings</h5>
+                    <div class="scroll-row-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="public/img/jmann-couplings.jpg" alt="" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center text-uppercase">couplings</h5>
+                                <p class="text-center"><b>$10</b></p>
+                                <p class="text-center">QTY in stock: 101</p>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="store.html?brand=flenges" class="scroll-row-item">
-                        <div>
-                            <img src="public/img/jmann-flenges.jpg" alt="">
-                            <h5 class="text-center mt-1">flenges</h5>
+                    <div class="scroll-row-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="public/img/jmann-flenges.jpg" alt="" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center text-uppercase">flenges</h5>
+                                <p class="text-center"><b>$10</b></p>
+                                <p class="text-center">QTY in stock: 101</p>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="store.html?brand=horses" class="scroll-row-item">
-                        <div>
-                            <img src="public/img/jmann-horses.jpg" alt="">
-                            <h5 class="text-center mt-1">horses</h5>
+                    <div class="scroll-row-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="public/img/jmann-horses.jpg" alt="" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center text-uppercase">horses</h5>
+                                <p class="text-center"><b>$10</b></p>
+                                <p class="text-center">QTY in stock: 101</p>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="store.html?brand=orses" class="scroll-row-item">
-                        <div>
-                            <img src="public/img/jmann-orses.jpg" alt="">
-                            <h5 class="text-center mt-1">orses</h5>
+                    <div class="scroll-row-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="public/img/jmann-orses.jpg" alt="" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center text-uppercase">orses</h5>
+                                <p class="text-center"><b>$10</b></p>
+                                <p class="text-center">QTY in stock: 101</p>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="store.html?brand=pipes" class="scroll-row-item">
-                        <div>
-                            <img src="public/img/jmann-pipes.jpg" alt="">
-                            <h5 class="text-center mt-1">pipes</h5>
+                    <div class="scroll-row-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="public/img/jmann-pipes.jpg" alt="" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center text-uppercase">pipes</h5>
+                                <p class="text-center"><b>$10</b></p>
+                                <p class="text-center">QTY in stock: 101</p>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="store.html?brand=shafts" class="scroll-row-item">
-                        <div>
-                            <img src="public/img/jmann-shafts.jpg" alt="">
-                            <h5 class="text-center mt-1">shafts</h5>
+                    <div class="scroll-row-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="public/img/jmann-shafts.jpg" alt="" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center text-uppercase">shafts</h5>
+                                <p class="text-center"><b>$10</b></p>
+                                <p class="text-center">QTY in stock: 101</p>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="store.html?brand=sprockets" class="scroll-row-item">
-                        <div>
-                            <img src="public/img/jmann-sprockets.jpg" alt="">
-                            <h5 class="text-center mt-1">sprockets</h5>
+                    <div class="scroll-row-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="public/img/jmann-sprockets.jpg" alt="" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center text-uppercase">sprockets</h5>
+                                <p class="text-center"><b>$10</b></p>
+                                <p class="text-center">QTY in stock: 101</p>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     
-                    <a href="store.html?brand=tubes" class="scroll-row-item">
-                        <div>
-                            <img src="public/img/jmann-tubes.jpg" alt="">
-                            <h5 class="text-center mt-1">tubes</h5>
+                    <div class="scroll-row-item">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="public/img/jmann-tubes.jpg" alt="" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center text-uppercase">tubes</h5>
+                                <p class="text-center"><b>$10</b></p>
+                                <p class="text-center">QTY in stock: 101</p>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     
                 </div>
             </div>
