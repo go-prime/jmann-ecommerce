@@ -360,7 +360,6 @@
             $msgBox.scrollIntoView()
         }
         $form.addEventListener("submit", async (e) => {
-            alert($form.action)
             e.preventDefault()
             try {
                 const res = await fetch({
