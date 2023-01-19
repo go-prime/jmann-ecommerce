@@ -162,7 +162,7 @@
                 <h1 class="text-start"><b class="underline-black underline-offset-8 letter-spacing-8px">Sho</b>p Here</h1>
             </div>
         </div>
-        <div class="row mb-3">
+        <div class="row mb-5">
             <div class="col-12">
                 <p>
                     <caption><b id="items-found">8</b>&nbsp;Items Found</caption>
@@ -172,7 +172,7 @@
                         <input type="search" class="form-control form-control-lg" id="product-name-search" placeholder="Product Name" required>
                         <button class="btn btn-primary disabled" placeholder>
                             <b>Search&nbsp;</b>
-                            <object data="public/vendors/fontawesome/svgs/solid/binoculars.svg" class="glyphicon-20"></object>
+                            <object data="public/vendors/fontawesome/svgs/solid/magnifying-glass.svg" class="glyphicon-20"></object>
                         </button>
                     </div>
                 </p>
@@ -183,10 +183,56 @@
                 </div> -->
             </div>
             <div class="col-12">
-
+                <form action="store.html" method="get">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="product-name" placeholder="XYZ Gasket">
+                                <label for="product-name">Item Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="item-code" placeholder="ITM-000">
+                                <label for="item-code">Item Code</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="form-floating">
+                                <select class="form-select" id="product-type" required>
+                                    <option value="">--Product Type --</option>
+                                    
+                                </select>
+                                <label for="product-type">Product Type</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="form-floating">
+                                <select class="form-select" id="item-group" required>
+                                    <option value="">--Item Group --</option>
+                                    
+                                </select>
+                                <label for="item-group">Item Group</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center undecorated-links">
+                            <a href="store.html" class="btn btn-link mx-1">
+                                Remove&nbsp;<object data="public/vendors/fontawesome/svgs/solid/filter-circle-xmark.svg" class="glyphicon-20"></object>
+                            </a>
+                            <button type="reset" class="btn btn-secondary mx-1">
+                                Reset&nbsp;<object data="public/vendors/fontawesome/svgs/solid/delete-left.svg" class="glyphicon-20"></object>
+                            </button>
+                            <button type="submit" class="btn btn-primary mx-1">
+                                Apply&nbsp;<object data="public/vendors/fontawesome/svgs/solid/filter.svg" class="glyphicon-20"></object>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="row mb-3">
+        <div class="row mb-5">
             
             <div class="col-lg-3 col-md-4 col-sm-12 mb-5">
                 <div class="card product-card w-100">
